@@ -48,9 +48,35 @@ html {
 }
 
 ul {
-
+    position: relative;
+    color: #fff;
     padding: 0;
     list-style: none;
+}
+
+li {
+    margin: 0.75em 0.75em 0;
+}
+
+.link-animation {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.link-animation:after {
+    content: '';
+    display: block;
+    margin: 0;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+.link-animation:hover:after {
+    width: 100%;
+    background: #a0d6b4;
 }
 
 .nav {
