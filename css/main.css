@@ -71,7 +71,6 @@ li {
     width: 100%;
     max-width: 1200px;
     display: flex;
-
 }
 
 .heading {
@@ -138,6 +137,10 @@ li {
 
 .card-links a {
     text-decoration: none;
+}
+
+.card-links a:hover {
+    color: #FF6B5C
 }
 
 .card-img {
