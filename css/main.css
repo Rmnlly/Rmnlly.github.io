@@ -89,12 +89,7 @@ margin: 1em 1em 0;
 
 }
 
-@media (min-width: 768px) {
-  .nav {
-    justify-content: flex-end;
-    font-size: 1.3em;
-  }
-}
+
 
 #work {
     display: flex;
@@ -145,4 +140,21 @@ margin: 1em 1em 0;
 .three {
     background: url(../images/TMDB-Movie-App.png) no-repeat center;
     background-size: cover;
+}
+
+.video1 {
+    display: none;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    justify-content: flex-end;
+    font-size: 1.3em;
+  }
+  .video1 {
+    display: block;
+  }
+  .two {
+    display: none;
+  }
 }
