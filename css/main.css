@@ -157,7 +157,7 @@ li {
 }
 
 .card-desc h3 {
-    font-weight: 450;
+    font-weight: 500;
     margin: 1em 0;
     font-size: 1.25em;
 }
@@ -264,7 +264,7 @@ footer {
   }
 
   .large-cta {
-      font-size: 2.5em;
+      font-size: 2em;
       font-weight: 500;
   }
 
