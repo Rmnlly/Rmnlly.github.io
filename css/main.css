@@ -65,21 +65,6 @@ margin: 1em 1em 0;
     text-decoration: none;
 }
 
-.link-animation:after {
-    content: '';
-    display: block;
-    margin-top: 0.25em;
-    height: 3px;
-    width: 0px;
-    background: transparent;
-    transition: width .5s ease, background-color .5s ease;
-}
-
-.link-animation:hover:after {
-    width: 100%;
-    background: #a0f6b4;
-}
-
 .nav {
     font-size: 1.1em;
     justify-content: center;
@@ -88,8 +73,6 @@ margin: 1em 1em 0;
     display: flex;
 
 }
-
-
 
 #work {
     display: flex;
@@ -156,5 +139,20 @@ margin: 1em 1em 0;
   }
   .two {
     display: none;
+  }
+
+  .link-animation:after {
+      content: '';
+      display: block;
+      margin-top: 0.25em;
+      height: 3px;
+      width: 0px;
+      background: transparent;
+      transition: width .5s ease, background-color .5s ease;
+  }
+
+  .link-animation:hover:after {
+      width: 100%;
+      background: #a0f6b4;
   }
 }
