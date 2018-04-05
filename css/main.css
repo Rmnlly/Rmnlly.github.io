@@ -201,6 +201,7 @@ li {
 }
 
 #bio p {
+    display: block;
     font-size: 1.1em;
 }
 
