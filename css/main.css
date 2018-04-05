@@ -200,6 +200,10 @@ li {
     min-height: 400px;
 }
 
+#bio p {
+    font-size: 0.8em;
+}
+
 #contact {
     margin: 0 auto;
     max-width: 1200px;
