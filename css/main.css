@@ -230,7 +230,7 @@ footer {
 }
 
 /* Media query for desktop */
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .nav {
     justify-content: flex-end;
     font-size: 1.3em;
