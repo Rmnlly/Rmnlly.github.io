@@ -4,6 +4,7 @@ html {
   /* A system font stack so things load nice and quick! */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    scroll-behavior: smooth;
 }
 
 *,
@@ -24,7 +25,6 @@ html {
 }
 
 .gradient {
-    /* height: 100vh; */
     background: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0,0.8));
     content: "";
     position: absolute;
@@ -35,13 +35,14 @@ html {
 }
 
 .header-name {
-    margin: 3em 0 0;
+    margin: 3.5em 0 0;
     position: relative;
-    font-size: 3em;
+    font-size: 3.157em;
     color: #fff;
 }
 
 .title {
+    margin: 0.5em;
     position: relative;
     font-size: 1em;
     color: #fff;
@@ -55,7 +56,7 @@ ul {
 }
 
 li {
-    margin: 0.75em 0.75em 0;
+margin: 1em 1em 0;
 }
 
 .link-animation {
@@ -67,7 +68,7 @@ li {
 .link-animation:after {
     content: '';
     display: block;
-    margin: 0;
+    margin-top: 0.25em;
     height: 3px;
     width: 0px;
     background: transparent;
@@ -76,11 +77,72 @@ li {
 
 .link-animation:hover:after {
     width: 100%;
-    background: #a0d6b4;
+    background: #a0f6b4;
 }
 
 .nav {
+    font-size: 1.1em;
+    justify-content: center;
     width: 100%;
+    max-width: 1000px;
     display: flex;
+
+}
+
+@media (min-width: 768px) {
+  .nav {
     justify-content: flex-end;
+    font-size: 1.3em;
+  }
+}
+
+#work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #a0f6b4;
+}
+
+.card-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    min-height: 500px;
+    width: 70%;
+    max-width: 350px;
+    overflow: hidden;
+}
+
+.card-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card-img {
+    min-height: 250px;
+    height: 50%;
+}
+
+.card-desc {
+    text-align: center;
+}
+
+.one {
+    background: url(../images/drunk-bike.png) no-repeat center;
+    background-size: cover;
+}
+
+.two {
+    background: url(../images/interactive-mural.png) no-repeat center;
+    background-size: cover;
+}
+
+.three {
+    background: url(../images/TMDB-Movie-App.png) no-repeat center;
+    background-size: cover;
 }
